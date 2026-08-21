@@ -3,73 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Ganesh Collection | Pune</title>
     <link rel="stylesheet" href="style.css">
-    <title>Demo Store | Web Design Preview</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f8fafc; color: #1e293b; padding-bottom: 80px; }
-        
-        /* Banner */
-        .banner { background: linear-gradient(135deg, #0f172a, #0284c7); color: white; text-align: center; padding: 40px 20px; }
-        .banner h1 { font-size: 26px; margin-bottom: 8px; }
-        .banner p { font-size: 14px; color: #bae6fd; }
-        
-        /* Container */
-        .container { max-width: 500px; margin: 0 auto; padding: 20px; }
-        
-        /* Info Card */
-        .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-        .card h2 { font-size: 18px; color: #0f172a; margin-bottom: 12px; border-bottom: 2px solid #38bdf8; display: inline-block; padding-bottom: 4px; }
-        .info-item { display: flex; align-items: center; margin-bottom: 10px; font-size: 14px; }
-        .info-item span { font-size: 18px; margin-right: 10px; }
-        
-        /* Catalog Grid */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
-        .product-box { background: #f1f5f9; border-radius: 8px; padding: 12px; text-align: center; }
-        .product-box img { width: 100%; height: 100px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; }
-        .product-box h4 { font-size: 13px; color: #334155; }
-        
-        /* Sticky WhatsApp Bar */
-        .whatsapp-bar { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 12px 20px; box-shadow: 0 -4px 12px rgba(0,0,0,0.1); text-align: center; }
-        .wa-btn { display: block; background-color: #25D366; color: white; text-decoration: none; padding: 12px; border-radius: 30px; font-weight: bold; font-size: 15px; }
-    </style>
 </head>
 <body>
 
+    <!-- Header Banner -->
     <div class="banner">
-        <h1>[Dukaan / Shop Name]</h1>
-        <p>Premium Quality Goods at Wholesale Prices</p>
+        <h1>Shree Ganesh Collection</h1>
+        <p>Traditional Sarees, Kurtis & Ethnic Wear | Laxmi Road, Pune</p>
     </div>
 
     <div class="container">
-        <!-- Store Info -->
+        
+        <!-- Store Info Card -->
         <div class="card">
-            <h2>Store Info</h2>
-            <div class="info-item"><span>📍</span> Main Market Road, Near City Center</div>
-            <div class="info-item"><span>⏰</span> Open Daily: 10:00 AM – 9:00 PM</div>
-            <div class="info-item"><span>📞</span> Call: +91 98XXXXXXXX</div>
-        </div>
-
-        <!-- Featured Items -->
-        <div class="card">
-            <h2>Popular Collections</h2>
-            <div class="grid">
-                <div class="product-box">
-                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300" alt="Product">
-                    <h4>Sample Product 1</h4>
+            <h2>Shop Details</h2>
+            <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div class="info-text">
+                    <strong>Address</strong>
+                    Shop No. 12, Opposite City Post, Laxmi Road, Pune - 411030
                 </div>
-                <div class="product-box">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300" alt="Product">
-                    <h4>Sample Product 2</h4>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">⏰</span>
+                <div class="info-text">
+                    <strong>Opening Hours</strong>
+                    Tue – Sun: 10:30 AM – 9:00 PM (Monday Closed)
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">💳</span>
+                <div class="info-text">
+                    <strong>Payment Accepted</strong>
+                    UPI (GPay / PhonePe), Credit/Debit Cards, Cash
                 </div>
             </div>
         </div>
+
+        <!-- Featured Collections -->
+        <div class="card">
+            <h2>Trending Collections</h2>
+            <div class="grid">
+                <div class="product-box">
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400" alt="Paithani Saree">
+                    <h4>Pure Silk Paithani Saree</h4>
+                    <div class="product-price">From ₹4,500</div>
+                </div>
+                <div class="product-box">
+                    <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400" alt="Designer Kurti">
+                    <h4>Cotton Fancy Kurti Set</h4>
+                    <div class="product-price">From ₹850</div>
+                </div>
+                <div class="product-box">
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400" alt="Nauvari Saree">
+                    <h4>Traditional Nauvari Saree</h4>
+                    <div class="product-price">From ₹3,200</div>
+                </div>
+                <div class="product-box">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400" alt="Dress Material">
+                    <h4>Chanderi Dress Material</h4>
+                    <div class="product-price">From ₹1,200</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Direct Map & Inquiry -->
+        <div class="card">
+            <h2>Visit Store</h2>
+            <div class="info-item">
+                <span class="info-icon">🚘</span>
+                <div class="info-text">
+                    <strong>Landmark</strong>
+                    Near Alka Talkies Chowk / Deccan Gymkhana
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Sticky Bottom WhatsApp CTA -->
+    <!-- Sticky Bottom WhatsApp Bar -->
     <div class="whatsapp-bar">
-        <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20saw%20your%20website%20and%20want%20to%20inquire." class="wa-btn">
-            📲 Order / Inquire on WhatsApp
+        <a href="https://wa.me/919823000000?text=Namaste!%20I%20saw%20your%20website%20and%20want%20to%20inquire%20about%20Sarees." class="wa-btn" target="_blank">
+            💬 Order / Check Price on WhatsApp
         </a>
     </div>
 
