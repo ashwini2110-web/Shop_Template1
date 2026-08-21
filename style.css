@@ -1,47 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary: #0f172a;
-    --accent: #0284c7;
-    --whatsapp: #25D366;
+    --primary: #1e1b4b;        /* Deep Royal Navy */
+    --gold: #d97706;           /* Rich Regal Gold */
+    --gold-light: #fef3c7;     /* Soft Gold Background */
+    --whatsapp: #25D366;       /* WhatsApp Green */
     --whatsapp-dark: #1da851;
     --bg-main: #f8fafc;
     --card-bg: #ffffff;
     --text-dark: #0f172a;
     --text-muted: #64748b;
     --border: #e2e8f0;
-    --radius: 14px;
+    --radius: 16px;
     --shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
 
-body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom: 90px; }
+body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom: 95px; }
+
+/* Top Gold Announcement Bar */
+.top-announcement {
+    background: linear-gradient(90deg, #b45309, #d97706, #b45309);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px 12px;
+    letter-spacing: 0.3px;
+}
 
 /* Banner Styling */
 .banner {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
     color: #ffffff;
     text-align: center;
     padding: 36px 20px 28px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
+    border-bottom: 3px solid var(--gold);
 }
 
 .rating-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    color: #fde047;
+    background: rgba(217, 119, 6, 0.2);
+    border: 1px solid var(--gold);
+    color: #fef08a;
     padding: 4px 12px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.banner h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
-.banner p { font-size: 13px; color: #c7d2fe; }
+.banner h1 { 
+    font-family: 'Cinzel', serif;
+    font-size: 24px; 
+    font-weight: 700; 
+    color: #fbbf24;
+    margin-bottom: 6px; 
+    letter-spacing: 0.5px;
+}
+
+.banner p { font-size: 13px; color: #cbd5e1; }
 
 /* Container & Cards */
 .container { max-width: 480px; margin: -16px auto 0; padding: 0 16px; }
@@ -55,34 +76,39 @@ body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom
     box-shadow: var(--shadow);
 }
 
+.highlight-card {
+    border-top: 3px solid var(--gold);
+}
+
 .status-pill.open {
     display: inline-block;
     background: #dcfce7;
     color: #15803d;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     padding: 4px 10px;
     border-radius: 6px;
     margin-bottom: 14px;
 }
 
-.card h2 { font-size: 16px; font-weight: 700; margin-bottom: 14px; }
+.card h2 { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 14px; }
 
 .info-item { display: flex; gap: 12px; margin-bottom: 12px; font-size: 13px; color: var(--text-muted); }
-.info-icon { font-size: 16px; background: #f1f5f9; padding: 6px; border-radius: 8px; }
+.info-icon { font-size: 16px; background: var(--gold-light); padding: 6px; border-radius: 8px; }
 .info-text strong { color: var(--text-dark); display: block; font-size: 13px; }
 
-.map-link {
+.map-btn {
     display: block;
     text-align: center;
     background: #f0f9ff;
     color: #0284c7;
     font-weight: 700;
     font-size: 13px;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 10px;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 12px;
+    border: 1px solid #bae6fd;
 }
 
 /* Product Grid */
@@ -107,15 +133,34 @@ body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom
     border-radius: 4px;
     z-index: 10;
 }
-.tag.best { background: #0284c7; }
+.tag.best { background: var(--gold); }
 .tag.offer { background: #e11d48; }
+.tag.new { background: #0284c7; }
 
-.product-box img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-bottom: 6px; }
-.product-box h4 { font-size: 12px; font-weight: 600; }
-.product-price { font-size: 12px; color: #0284c7; font-weight: 700; margin-top: 2px; }
+.product-box img { width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 6px; }
+.product-box h4 { font-size: 12px; font-weight: 600; color: var(--text-dark); line-height: 1.3; }
+.product-price { font-size: 12px; color: var(--gold); font-weight: 700; margin-top: 4px; }
 .old-price { text-decoration: line-through; color: #94a3b8; font-size: 11px; margin-left: 4px; font-weight: 400; }
 
-/* Dual Floating Action Bar */
+/* Review Card */
+.review-card {
+    background: #fffbe0;
+    border: 1px solid #fef08a;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.stars { color: #d97706; }
+.review-text { font-size: 12px; color: #475569; italic; line-height: 1.4; }
+.reviewer-name { font-size: 11px; font-weight: 700; color: #1e293b; margin-top: 6px; text-align: right; }
+
+/* Dual Floating Mobile Bar */
 .dual-bar {
     position: fixed;
     bottom: 0; left: 0; right: 0;
@@ -139,7 +184,7 @@ body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom
     padding: 12px;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .wa-btn {
@@ -151,6 +196,6 @@ body { background-color: var(--bg-main); color: var(--text-dark); padding-bottom
     padding: 12px;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
